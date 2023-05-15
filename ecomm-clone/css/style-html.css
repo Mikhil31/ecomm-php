@@ -1,0 +1,72 @@
+body{
+ margin:0px;
+}
+.navbar {
+  background-color: #D3D3D3;
+  color: rgb(43, 44, 44);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size:130%;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav li {
+  margin: 0 10px;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.navbar-nav li a:hover {
+  color: orange;
+}
+
+   .btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline;
+    border-radius: 100px;
+    transition: all .2s; 
+    margin:5px;  
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.img1 {
+	width: 20%;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+   padding-top:5px;
+}
+.img1:hover {
+	width: 25%;
+}
+.heading:hover{
+    color:orange;
+}

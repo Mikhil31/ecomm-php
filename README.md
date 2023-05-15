@@ -1,5 +1,6 @@
 # ecomm-php
 
+**About and Contact are still under work**
 **copy paste the table values from .sql file**
 
 **To insert values into product table so that it displays in sections**

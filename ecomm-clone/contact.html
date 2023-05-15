@@ -5,10 +5,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact <i class="fa fa-usb" aria-hidden="true"></i></title>
+    <title>About us | Circuit County</title>
+    <link rel="stylesheet" href="css/style-html.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-html.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
 </head>
+<style>
+    /* navbar styles */
+    .body {
+        background-image: url("images/background-login.jpg");
+    }
+
+    .custom-navbar {
+        background-color: #D3D3D3;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 130%;
+    }
+
+    .custom-navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .custom-navbar-nav {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .custom-navbar-nav li {
+        margin: 0 10px;
+    }
+
+    .custom-navbar-nav li a {
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .custom-navbar-nav li a:hover {
+        color: var(--orange);
+    }
+
+    .custom-btn:link,
+    .custom-btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline;
+        border-radius: 100px;
+        transition: all .2s;
+        margin: 5px;
+    }
+
+    .custom-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .custom-btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
+    .custom-img {
+        width: 20%;
+        height: auto;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        padding-top: 5px;
+    }
+
+    .custom-img:hover {
+        width: 25%;
+    }
+
+    iframe {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 767px) {
+        .container {
+            margin-top: 30px;
+        }
+
+        iframe {
+            height: 200px;
+        }
+    }
+
+    .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .contact-form label {
+        font-weight: bold;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+        font-size: 16px;
+        background-color: #f7f7f7;
+    }
+
+    .contact-form textarea {
+        resize: none;
+    }
+
+    .contact-form button[type="submit"] {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contact-form button[type="submit"]:hover {
+        background-color: #0062cc;
+    }
+</style>
 
 <body>
+    <nav class="custom-navbar">
+        <a class="custom-navbar-brand" href="home.php" ;><img src="images/logo.png" alt="" class="custom-img"></a>
+        <ul class="custom-navbar-nav">
+            <!-- ratings subject to change -->
+
+            <li><a href="login.php">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h1 style="display: flex; justify-content: center; text-decoration: underline;">We are here</h1>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15557.118145176752!2d77.6395351!3d12.8897384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14b023dade9d%3A0x35272e55303bd711!2sDayananda%20Sagar%20University%20(DSU)%20-%20City%20Campus!5e0!3m2!1sen!2sin!4v1684171613334!5m2!1sen!2sin"
+        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    <form class="contact-form" action="mailto:yourname@yourdomain.com" method="post" enctype="text/plain">
+        <h1 style="display: flex; justify-content: center; text-decoration: underline;">Get in Touch</h1>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" name="message"
+                required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br><br>
+    <div style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+        <p style="font-size: 120%; color: #555;">&copy; 2023 Circuit County. All rights reserved.</p>
 </body>
 
 </html>

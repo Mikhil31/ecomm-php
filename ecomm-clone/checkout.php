@@ -149,8 +149,7 @@ if(isset($message)){
   <a class="navbar-brand" href="home.php" style="width=20%;"><img src="images/logo.png" alt="" class="img1"></a>
   <ul class="navbar-nav">
    <!-- ratings subject to change -->
-    <li><a href="Ratings.html">Ratings</a></li>
-    <li><a href="about.html">About us</a></li>
+    <li><a href="login.php">Login</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
